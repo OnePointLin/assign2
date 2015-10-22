@@ -12,7 +12,7 @@ PImage end1, end2;
 
 int gameState;
 int backGroundPosition_1 = 0, backGroundPosition_2 = -641 ;
-int enemyPosition_x= 0, enemyPosition_y, enemySpeed;
+int enemyPosition_x= 0, enemyPosition_y;
 int blood = 20, coefficient = 2, bloodWidth;
 int treasurePosition_x, treasurePosition_y;
 int fighterPosition_x = 589, fighterPosition_y = 214;
@@ -86,7 +86,7 @@ void draw() {
      //blood+treasure
      fill(255, 0, 0);
      getTreasure();
-     blood();
+     calculateBlood();
      rect(10, 5, bloodWidth, 20 );
      image(treasure, treasurePosition_x, treasurePosition_y);
      
@@ -184,7 +184,7 @@ int fighterMax_y(){
   return fighterPosition_y;
 }
 
-int blood(){
+int calculateBlood(){
   bloodWidth = blood * coefficient;
   
   return bloodWidth;
