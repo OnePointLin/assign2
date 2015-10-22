@@ -76,8 +76,8 @@ void draw() {
      image(enemy, enemyPosition_x, enemyPosition_y);
   
      //fighter
-     fighterPositionOfx();
-     fighterPositionOfy();
+     fighterPositionMove_x();
+     fighterPositionMove_y();
      fighterMax_x();
      fighterMax_y();
      hitEnemy();
@@ -148,7 +148,7 @@ void keyReleased(){
  }
 }
 
-int fighterPositionOfx(){
+int fighterPositionMove_x(){
   if(rightPressed) 
     fighterPosition_x += 6;
   if(leftPressed)
@@ -157,7 +157,7 @@ int fighterPositionOfx(){
    return fighterPosition_x;
 }
 
-int fighterPositionOfy(){
+int fighterPositionMove_y(){
   if(upPressed)
     fighterPosition_y -= 6;
   if(downPressed)
