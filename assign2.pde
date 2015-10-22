@@ -80,6 +80,8 @@ void draw() {
      fighterPositionMove_y();
      fighterMax_x();
      fighterMax_y();
+     
+     //hitEnemy
      hitEnemy();
      image(fighter, fighterPosition_x, fighterPosition_y);
      
@@ -206,7 +208,7 @@ int getTreasure(){
 }
 
 int enemySpeed(){
-  enemyPosition_y += (fighterPosition_y - enemyPosition_y)/30;
+  enemyPosition_y += (fighterPosition_y - enemyPosition_y)/20;
   
   return enemyPosition_y;
 }
