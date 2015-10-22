@@ -52,7 +52,7 @@ void draw() {
           if(mousePressed)
             gameState = GAME_RUN;
         }
-   break;
+    break;
      
    case GAME_RUN:   
      //backGround1
@@ -101,14 +101,14 @@ void draw() {
      break;
      
      case GAME_OVER:
-     image(end2, 0, 0);
-     if(mouseX >= 215 && mouseX <= 430 && 
-        mouseY >= 315 && mouseY <= 344){
-          image(end1, 0, 0);
-          if(mousePressed)
-            gameState = GAME_START;
-     }
-     break;  
+       image(end2, 0, 0);
+       if(mouseX >= 215 && mouseX <= 430 && 
+          mouseY >= 315 && mouseY <= 344){
+            image(end1, 0, 0);
+            if(mousePressed)
+              gameState = GAME_START;
+       }
+       break;  
   }
 }
 
@@ -165,7 +165,7 @@ int fighterPositionMove_y(){
   if(downPressed)
     fighterPosition_y += 6;
     
-   return fighterPosition_y;
+  return fighterPosition_y;
 }
 
 int fighterMax_x(){
