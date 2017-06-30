@@ -106,7 +106,7 @@ void draw() {
          mouseY >= 315 && mouseY <= 344){
           image(end1, 0, 0);
             if(mousePressed)
-              gameState = GAME_STAR;
+              gameState = GAME_START;
       }
       break;  
   }
